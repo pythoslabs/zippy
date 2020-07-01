@@ -6,7 +6,7 @@ def getdb():
     return df
 
 def valid_zipcode(_zip):
-    df_zip=getdb()
+    df=getdb()
     # To do : Create another way to check .isin? 
     # df['zip'].isin(['53186'])) ?? 
     if len(df[df['zip']==_zip]) == 0  :
